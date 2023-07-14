@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style_3.css">
+    <script src="https://kit.fontawesome.com/c8d83003e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="screenshot.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenus()"></i>
+
+            </nav>
+            <div class="header-text">
+            <p>Web Developer</p>
+            <h1> Hey , I'm <span>Tanvi</span><br> Wakode From PRMIT&R</h1>
+            </div>
+        </div>
+      <!-----------------------about-------------->
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col1">
+                    <img src="img1-removebg-preview.jpg">
+                </div>
+                <div class="about_col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Tanvi Wakode and im a dedicated fourth year It student pursuing Bachelor's degree in Information Technology. At Prof. Ram Meghe Institute of Technology and Research. I'm eager to leverage my skills and knowledge to contribute to innovative projects
+                       <br> Throughout my academic journey , I have do several projects. My coursework has exposed me to programming languages such has c , c++, java, python . Additionaly i have gained insiged into html,css,js and sql
+                       <br> I am an avid participant in college web development program.This not only help me to gaining confidence in web field but also expand my technical reperotoire
+                        Beyond technical skills, I am a video creator with excellent editing skills. <br>As I embark on the next phase of my career, I am excited to contribute my skills and passion to a dynamic organization that fosters growth and encourages creative thinking.
+                       <br> Thank you for taking the time to learn about me. I look forward to connecting with industry professionals and exploring potential opportunities to contribute to your organization's success.
+                        </p>
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>   <!--<p class="tab-links">Experience</p>  -->
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-content active-tab" id="skills">
+                            <ul>
+                                <li><span>HTML, CSS, JS</span><br>Develope Projects</li>
+                                <li><span>SQL</span></li>
+                                <li><span>Salesforce</span><br>Admin</li>
+                                <li><span>Python</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="Education">
+                            <ul>
+                                <li><span>2018</span><br>completed SSC from Holy Cross</li>
+                                <li><span>2020</span><br>comleted HSC from Rural Institute</li>
+                                <li><span>2023</span><br>pursuing Bachelor degree from PRMIT&R</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--services-->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title"> services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web development</h2>
+                    <p>Website Development with the Help of Website Templates</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div >
+                    <i class="fa-brands fa-salesforce"></i>
+                    <h2>Salesforce</h2>
+                    <p> Salesforce administrators are responsible for managing</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-----------------------------portfolio-------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="play_1_1_1.jpg">
+                    <div class="layer">
+                        <h3>Music Clone</h3>
+                        <p>Using html, css, js i made this clone <br> with unique name ToneZo </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="rec_2.jpg">
+                    <div class="layer">
+                        <h3>Recruitment</h3>
+                        <p>Using Salesforce administration made this project </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See More </a>
+
+        </div>
+    </div>
+     <!----------------------contact---------------------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-sharp fa-solid fa-paper-plane"></i> contact@example.com</p>
+                    <p> <i class="fa-solid fa-phone-volume"></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100077324568612&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/tanviwakode?igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/tanvi-wakode -45809b228"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit"class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+                 
+            </div>
+        </div>
+     </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenus(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx08HDALMHn2WE3YtS2vvOKcXtENGpI6-ACMV52OERnZGDlM5N0iOYmZ4xlHF3gdlWHgw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Msg sent Succcessfully!"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
